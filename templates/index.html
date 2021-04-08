@@ -1,0 +1,410 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<meta http-equiv="X-UA-Compatible" content="IE=9,IE=edge" />
+<base href="https://portal.tpu.ru/portal/pls/portal/">
+<meta name="keywords" content="университет, политехничейский университет, Томск, студент, сотрудник, личный кабинет" />
+<meta name="description" content="Личный кабинет сотрудников и студентов Томского политехнического университета" />
+<TITLE>Личный кабинет</TITLE>
+<link rel="stylesheet"  type="text/css" media="screen,projection"  href="/f_desktop/desktop_second.css" title="screenview" />
+<link rel="stylesheet"  type="text/css" media="screen,projection"  href="/f_desktop/desktop_common.css" title="screenview" />
+<link rel="stylesheet" type="text/css" media="screen,projection" href="/f_desktop/tabs.css" title="screenview" />
+
+<link rel="stylesheet" type="text/css" media="screen,projection" href="/f_desktop/jq/css/start/jquery-ui-1.8.16.custom.css" title="screenview" />
+<script type="text/javascript" src="/f_desktop/jquery-ui-1.8.16.custom/js/jquery-1.6.2.min.js"></script>
+
+
+<!--link rel="stylesheet" type="text/css" media="screen,projection" href="/f_desktop/jquery-ui-1.10.3.custom/css/smoothness/jquery-ui-1.10.3.custom.min.css" title="screenview" />
+<script type="text/javascript" src="/f_desktop/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="/f_desktop/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script-->
+
+<!--Для собственно принтеров -->
+<link rel="stylesheet" type="text/css" media="print" href="/f_desktop/print.css"/>
+<!--Для превью с джаваскриптом -->
+<link rel="alternate stylesheet" type="text/css" media="screen,projection" href="/f_desktop/print.css" title="printview" disabled="disabled"/>
+<script type="text/javascript">
+<!--
+
+function setPrintCSS(isPrint) {
+// Определяем поддержку нужного нам элемента в броузерах
+  if (document.getElementsByTagName)
+      x = document.getElementsByTagName('link');
+  else if (document.all)
+      x = document.all.tags('link');
+  else
+  {
+      alert('Простите, этот скрипт не работает в вашем броузере');
+      return;
+  }
+// Пробегая по всем элементам LINK в HTML  - включаем и отключаем нужные нам стили
+// идентифицируя их по атрибуту title
+// параметр isPrint - отвечает просто за вариант стилей для печти или монитора
+  for (var i=0;i<x.length;i++) {
+      if(x[i].title == 'printview'){x[i].disabled = !isPrint;}
+      if(x[i].title == 'screenview'){x[i].disabled = isPrint;}
+  }
+}
+if(document.location.hash=='#print') setPrintCSS(true);
+-->
+</script>
+<style type="text/css">
+    .form-group input{width:250px;height: 25px;border-radius:3px;}
+.inplacedisplayid1siteid1497{Color:#000000;Font-Family:Tahoma;Font-Size:8pt;}
+.RegionNoBorder{}
+.RegionHeaderColor { border:#CCCCCC 0px solid;}
+    input {
+    border: 1px double black;
+    position: relative;
+        right: 650px;
+
+}
+
+    table {
+
+    border-spacing: 0px;
+}
+    .but{
+            position: relative;
+        left:650px;
+        top:130px;
+    }
+ </style>
+   </HEAD>
+<BODY link="#21897f" alink="#21897f" vlink="#21897f" text="#333333">
+  <div class="main">
+   <div class="content">
+     
+<iframe id="portalIFrame" title="" frameborder="0" width="0" height="0" src="/images/pobtrans.gif"></iframe><script type="text/javascript" src="https://portal.tpu.ru/portal/pls/portal/PORTAL.wwsbr_javascript.page_js?p_language=ru&amp;p_version=10.1.4.1.0.113">
+<!-- Comment out script for old browsers
+//-->
+</SCRIPT>
+<TABLE  width="100%" id="rg2520624"  border="0" cellpadding="0" cellspacing="0" summary=""><TR ALIGN="LEFT">
+<td valign="top" style="padding:0px 0px 0px 0px;width:100%;"><div class="date-block">
+<div class="date">
+ <div class="date-txt">
+   <div class="date-today">Сегодня</div>
+   <div style="display: inline-block;"> 
+   <div id="p1497_14705699_1497_14713709_14713709">30 марта 2021 / Вторник
+ / Неделя нечетная
+</DIV>
+   </div>
+ </div>
+</div>
+</div>
+</TD></TR>
+</TABLE><TABLE  border="0" cellspacing="0" cellpadding="0" width="100%"  summary="">
+<TR>
+<td valign="top" style="width:485px">
+<TABLE  width="100%" id="rg2520782"  border="0" cellpadding="0" cellspacing="0" summary=""><TR ALIGN="LEFT">
+<td valign="top" style="padding:0px 0px 0px 0px;width:100%;"><div id="p1497_14705708_1497_14713709_14713709"><TABLE  border="0" width="100%" cellpadding="0" cellspacing="0" class="RegionNoBorder">
+<TR><td class="RegionHeaderColor" style="width:100%"><div id="pcnt1497_14705708_1497_14713709_14713709"><div class="logo-block">
+  <div class="logo">
+  <a href="https://portal.tpu.ru/desktop_app" title="Личный кабинет"><img src="/f_desktop/img/logo-desktop.png" width="192" height="28"  alt="Личный кабинет"></a>
+  </div>
+</div>
+
+</DIV></TD></TR>
+</TABLE>
+</DIV></TD></TR>
+<TR ALIGN="LEFT">
+<td valign="top" style="padding:0px 0px 0px 0px;width:100%;"><div id="p1497_14720463_1497_14713709_14713709">
+   <script type="text/javascript">
+    $(function(){
+      $("#sel_role").change(function() {
+                    var url = $(this).val();
+                    if (url !== "0") {window.location = url};
+                });
+            })
+   </script>
+<div class="desktop-form">
+                            <form action="">
+                               <div>
+                               <select size="1" name="sel_role"  id="sel_role">
+<option label="Выберите рабочий стол" value="0" disabled>Выберите рабочий стол</option>
+<option value="https://portal.tpu.ru/desktop/student" selected>Сотрудника</option>                              </select>
+                                </div>
+                            </form>
+                        </div>
+</DIV></TD></TR>
+</TABLE></TD>
+<td valign="top" style="width:715px">
+<TABLE  width="100%" id="rg2520786"  border="0" cellpadding="0" cellspacing="0" summary=""><TR ALIGN="LEFT">
+<td valign="top" style="padding:0px 0px 0px 0px;width:100%;"><div id="p1497_14708009_1497_14713709_14713709"><script src="https://portal.tpu.ru/f_desktop/js/upload.plugin.js" type="text/javascript"></script>
+<script src="https://portal.tpu.ru/f_desktop/js/ajaxfileupload.js" type="text/javascript"></script>
+<script src="https://portal.tpu.ru/f_desktop/js/functions.js?1=2" type="text/javascript"></script>
+<style type="text/css">input[type=file] {cursor:pointer;}</style>
+<div class="personal">
+<div class="foto-main">
+<img src="https://portal.tpu.ru/f_desktop/img/foto-man.png" width="120" class="foto"><br />
+<div >
+       <a style="line-height: 20px;" class="change" href="javascript:void(0);" id="uploadButton">Изменить фото</a>
+           <img alt="Загрузка..." src="https://portal.tpu.ru/f_desktop/img/loading_bar.gif" id="loading_bar" style="display:none;"/>
+<a href="https://web.tpu.ru/webcenter/content/conn/WebCenterSpaces-ucm/path/WebCenterSpaces-Root/opr/files/instr-photo.doc" title="Инструкция по размещению (замене) фото" target="_blank">
+                              <img style="vertical-align: middle;" src="https://portal.tpu.ru/f_desktop/img/how.png?1" alt="Инструкция по размещению"/>
+                           </a>
+</div>
+</div>
+<div class="data-person" style="margin-top: 20px">
+<span class="normal"><b>Каргин Александр Валерьевич</b></span><br />
+Группа: 8И7А, 4 курс
+<BR>
+E-mail: <a href="mailto:avk211@tpu.ru">avk211@tpu.ru</a>
+</div>
+<div class="clear"></div>
+</div>
+</DIV></TD></TR>
+</TABLE></TD>
+</TR>
+</TABLE>
+<TABLE  width="100%" id="rg2520783"  style="height:48px" border="0" cellpadding="0" cellspacing="0" summary=""><TR>
+<TD COLSPAN="1" style="width:100%;" ><IMG SRC="/images/pobtrans.gif" height="1" width="1" alt="" style="display:block"></TD>
+</TR>
+</TABLE><TABLE  border="0" cellspacing="0" cellpadding="0" width="100%"  summary="">
+<TR>
+<td valign="top" style="width:195px">
+<TABLE  width="100%" id="rg2520790"  border="0" cellpadding="0" cellspacing="0" summary=""><TR ALIGN="LEFT">
+<td valign="top" style="padding:0px 0px 0px 0px;width:100%;"><div class="desktop-menu">
+<div class="corner"><img src="/f_desktop/img/lt-corner-grey2.png" width="194" height="12" alt="" /></div>
+<div>
+  <div id="p1497_14966565_1497_14713709_14713709"><ul class="menu">
+  <li><a href="https://portal.tpu.ru/desktop/student/private" title="ЛИЧНАЯ ИНФОРМАЦИЯ" target="_self">ЛИЧНАЯ ИНФОРМАЦИЯ</a></li>
+  <li><a href="https://portal.tpu.ru/desktop/student/science" title="НАУЧНАЯ ДЕЯТЕЛЬНОСТЬ" target="_self">НАУЧНАЯ ДЕЯТЕЛЬНОСТЬ</a></li>
+  <li><a href="https://portal.tpu.ru/desktop/student/oplata" title="ОПЛАТА УСЛУГ" target="_self">ОПЛАТА УСЛУГ</a></li>
+  <li><a href="https://portal.tpu.ru/desktop/student/forms" title="ОПРОСЫ И АКЦИИ" target="_self">ОПРОСЫ И АКЦИИ</a></li>
+  <li><a href="https://portal.tpu.ru/desktop/student/services" title="ЦИФРОВЫЕ СЕРВИСЫ" target="_self">ЦИФРОВЫЕ СЕРВИСЫ</a></li>
+  <li><a href="https://portal.tpu.ru/desktop/student/support" title="ТЕХПОДДЕРЖКА" target="_self">ТЕХПОДДЕРЖКА</a></li>
+</ul>
+</DIV>
+</div>
+<div class="corner"><img src="/f_desktop/img/lb-corner-grey2.png" width="194" height="12" alt="" /></div>
+</div>
+</TD></TR>
+</TABLE><TABLE  width="100%" id="rg2520798"  border="0" cellpadding="0" cellspacing="0" summary=""><TR ALIGN="LEFT">
+<td valign="top" style="padding:0px 0px 0px 0px;width:100%;"><div class="corner"><img src="/f_desktop/img/lt-corner-grey2.png" width="194" height="12" alt="" /></div>
+<div class="nav">
+  <div class="nav-content">
+     <div id="p1497_14705815_1497_14713709_14713709"><style type="text/css">.GroupHeaderid14703499siteid1497{Text-Align:Left;Height:20px;Background-Color:#336699;}
+.GroupHeaderLinkid14703499siteid1497{Color:#FFFFFF;Font-Family:Arial, Helvetica;Font-Size:9pt;Font-Weight:Bold;}
+.GroupHeaderTextid14703499siteid1497{Font-Family:Arial, Helvetica;Color:#FFFFFF;Font-Size:9pt;Font-Weight:Bold;}
+.RegionHeaderid14703499siteid1497{Background-Color:#336699;Height:20px;Text-Align:Left;}
+.RegionHeaderTextid14703499siteid1497{Color:#FFFFFF;Font-Weight:Bold;Font-Family:Arial, Helvetica;Font-Size:9pt;}
+.Bodyid14703499siteid1497{}
+.authorid14703499siteid1497{Font-Family:Arial, Helvetica;Font-Size:8pt;Color:#000000;}
+.big_imageid14703499siteid1497{Font-Size:8pt;Font-Family:Arial, Helvetica;Color:#000000;}
+.createdateid14703499siteid1497{Font-Family:Arial, Helvetica;Font-Size:8pt;Color:#000000;}
+.creatorid14703499siteid1497{Font-Size:8pt;Font-Family:Arial, Helvetica;Color:#000000;}
+.defaultattributeid14703499siteid1497{Font-Size:8pt;Font-Family:Arial, Helvetica;Color:#000000;}
+.descriptionid14703499siteid1497{Color:#000000;Font-Family:Arial, Helvetica;Font-Size:8pt;}
+.Display_In_New_browserid14703499siteid1497{Font-Size:8pt;Font-Family:Arial, Helvetica;Color:#000000;}
+.Display_Reports_Parameter_Formid14703499siteid1497{Color:#000000;Font-Family:Arial, Helvetica;Font-Size:8pt;}
+.documentsizeid14703499siteid1497{Font-Size:8pt;Font-Family:Arial, Helvetica;Color:#000000;}
+.expiredateid14703499siteid1497{Color:#000000;Font-Family:Arial, Helvetica;Font-Size:8pt;}
+.f_descriptionid14703499siteid1497{Color:#000000;Font-Family:Arial, Helvetica;Font-Size:8pt;}
+.height_videoid14703499siteid1497{Color:#000000;Font-Family:Arial, Helvetica;Font-Size:8pt;}
+.height_video_mid14703499siteid1497{Color:#000000;Font-Family:Arial, Helvetica;Font-Size:8pt;}
+.inplacedisplayid14703499siteid1497{Color:#000000;Font-Family:Arial, Helvetica;Font-Size:8pt;}
+.itemfunctionid14703499siteid1497{Color:#000000;Font-Size:8pt;Font-Family:Arial, Helvetica;}
+.keywordsid14703499siteid1497{Color:#000000;Font-Family:Arial, Helvetica;Font-Size:8pt;}
+.new_windowid14703499siteid1497{Color:#000000;Font-Family:Arial, Helvetica;Font-Size:8pt;}
+.Oracle_Reports_Componentsid14703499siteid1497{Font-Family:Arial, Helvetica;Font-Size:8pt;Color:#000000;}
+.perspectivesid14703499siteid1497{Font-Size:8pt;Font-Family:Arial, Helvetica;Color:#000000;}
+.scoreid14703499siteid1497{Color:#000000;Font-Family:Arial, Helvetica;Font-Size:8pt;}
+.subpagetitleid14703499siteid1497{Font-Family:Arial, Helvetica;Font-Size:8pt;Color:#000000;}
+.titleid14703499siteid1497{Color:#000000;Font-Family:Arial, Helvetica;Font-Size:8pt;Font-Weight:Bold;}
+.titleorimageid14703499siteid1497{Color:#ffffff;Font-Family:Arial;Font-Size:12px;}
+.width_videoid14703499siteid1497{Color:#000000;Font-Family:Arial, Helvetica;Font-Size:8pt;}
+.width_video_mid14703499siteid1497{Color:#000000;Font-Size:8pt;Font-Family:Arial, Helvetica;}
+.wwsbr_category_id14703499siteid1497{Font-Size:8pt;Font-Family:Arial, Helvetica;Color:#000000;}
+.wwsbr_charset_id14703499siteid1497{Font-Size:8pt;Font-Family:Arial, Helvetica;Color:#000000;}
+.wwsbr_itemtype_id14703499siteid1497{Color:#000000;Font-Family:Arial, Helvetica;Font-Size:8pt;}
+.wwsbr_mime_type_id14703499siteid1497{Font-Size:8pt;Font-Family:Arial, Helvetica;Color:#000000;}
+.wwsbr_page_id14703499siteid1497{Color:#000000;Font-Family:Arial, Helvetica;Font-Size:8pt;}
+.wwsbr_pagegroup_id14703499siteid1497{Color:#000000;Font-Family:Arial, Helvetica;Font-Size:8pt;}
+.wwsbr_publishdate_id14703499siteid1497{Color:#000000;Font-Size:8pt;Font-Family:Arial, Helvetica;}
+.wwsbr_updatedate_id14703499siteid1497{Color:#000000;Font-Family:Arial, Helvetica;Font-Size:8pt;}
+.wwsbr_updator_id14703499siteid1497{Color:#000000;Font-Family:Arial, Helvetica;Font-Size:8pt;}
+.wwsbr_version_number_id14703499siteid1497{Color:#000000;Font-Family:Arial, Helvetica;Font-Size:8pt;}
+.LeftSubTabid14703499siteid1497{Background-Position:left top;Background-Attachment:scroll;Background-Color:#336699;Background-Image:url(https://portal.tpu.ru/images/sl.gif);Background-Repeat:no-repeat;}
+.LeftTabBgSlantid14703499siteid1497{Background-Position:left top;Background-Image:url(https://portal.tpu.ru/images/tl.gif);Background-Color:#CCCC99;Background-Attachment:scroll;Background-Repeat:no-repeat;}
+.LeftTabForeSlantid14703499siteid1497{Background-Attachment:scroll;Background-Color:#336699;Background-Image:url(https://portal.tpu.ru/images/tl.gif);Background-Position:left top;Background-Repeat:no-repeat;}
+.RightSubTabid14703499siteid1497{Background-Attachment:scroll;Background-Color:#336699;Background-Image:url(https://portal.tpu.ru/images/sr.gif);Background-Position:right top;Background-Repeat:no-repeat;}
+.RightTabBgCurveid14703499siteid1497{Background-Image:url(https://portal.tpu.ru/images/tr.gif);Background-Color:#CCCC99;Background-Attachment:scroll;Background-Position:right top;Background-Repeat:no-repeat;}
+.RightTabForeCurveid14703499siteid1497{Background-Attachment:scroll;Background-Color:#336699;Background-Image:url(https://portal.tpu.ru/images/tr.gif);Background-Position:right top;Background-Repeat:no-repeat;}
+.SubTabBgTextid14703499siteid1497{Color:#CCCC99;Text-Decoration:none;Font-Family:Arial, Helvetica;Font-Size:11pt;Font-Weight:Bold;}
+.TabBackgroundColorid14703499siteid1497{Background-Color:#CCCC99;}
+.TabBackgroundTextid14703499siteid1497{Color:#003366;Text-Decoration:none;Font-Family:Arial, Helvetica;Font-Size:10pt;}
+.TabForegroundColorid14703499siteid1497{Background-Color:#336699;}
+.TabForegroundTextid14703499siteid1497{Color:#FFFFFF;Text-Decoration:none;Font-Family:Arial, Helvetica;Font-Size:10pt;Font-Weight:Bold;}
+ </style>
+<TABLE  border="0" width="100%" cellpadding="0" cellspacing="0" class="RegionNoBorder">
+<TR><td class="RegionHeaderColor" style="width:100%"><div id="pcnt1497_14705815_1497_14713709_14713709"><div class="Bodyid14703499siteid1497">
+<TABLE  width="100%" id="rg2520183"  border="0" cellpadding="0" cellspacing="0" summary=""><TR ALIGN="LEFT">
+<td valign="top" style="padding:0px 0px 0px 0px;width:100%;white-space:nowrap"></TD></TR>
+<TR ALIGN="LEFT">
+<td valign="top" style="padding:5px 0px 0px 0px;width:100%;white-space:nowrap"></TD></TR>
+<TR ALIGN="LEFT">
+<td valign="top" style="padding:5px 0px 0px 0px;width:100%;white-space:nowrap"><A HREF="https://portal.tpu.ru/portal/pls/portal/PORTAL.home" class="titleorimageid14703499siteid1497"><IMG SRC="https://portal.tpu.ru/portal/pls/portal/docs/1/12510005.PNG" ALT="Домашняя страница"  style="border:none;vertical-align:middle;"></A><A HREF="https://portal.tpu.ru/portal/pls/portal/PORTAL.home" class="titleorimageid14703499siteid1497"></A></TD></TR>
+<TR ALIGN="LEFT">
+<td valign="top" style="padding:5px 0px 0px 0px;width:100%;white-space:nowrap"><A HREF="https://aid.main.tpu.ru/pls/orasso/orasso.wwsso_app_admin.ls_logout?p_done_url=http%3A%2F%2Fportal.tpu.ru%3A7777%2Fportal%2Fpls%2Fportal%2FPORTAL.home" class="titleorimageid14703499siteid1497"><IMG SRC="https://portal.tpu.ru/portal/pls/portal/docs/1/12510008.PNG" ALT="Выход"  style="border:none;vertical-align:middle;"></A><A HREF="https://aid.main.tpu.ru/pls/orasso/orasso.wwsso_app_admin.ls_logout?p_done_url=http%3A%2F%2Fportal.tpu.ru%3A7777%2Fportal%2Fpls%2Fportal%2FPORTAL.home" class="titleorimageid14703499siteid1497">Выход</A></TD></TR>
+</TABLE></DIV>
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+  </div>
+</div>
+<div class="corner"><img src="/f_desktop/img/lb-corner-grey2.png" width="194" height="12" alt="" /></div>
+</TD></TR>
+</TABLE></TD>
+<td valign="top" style="width:20px">
+<TABLE  width="100%" id="rg2520793"  border="0" cellpadding="0" cellspacing="0" summary=""><TR ALIGN="LEFT">
+<td valign="top" style="padding:0px 0px 0px 0px;width:100%;"><span class="inplacedisplayid1siteid1497"><div class="pad20">
+</div></SPAN>
+</TD></TR>
+</TABLE></TD>
+<td valign="top" style="width:965px">
+<TABLE  width="100%" id="rg2521136"  border="0" cellpadding="0" cellspacing="0" summary=""><TR ALIGN="LEFT">
+<td valign="top" style="padding:0px 0px 0px 0px;width:100%;"><SCRIPT LANGUAGE="JavaScript">
+<!-- 
+function openWindow1(URL) {
+myWin= window.open("","displayWindow","width=600,height=600,status=no,toolbar=no,menubar=no");
+myWin.document.open();
+myWin.document.write("<html><head><title>Фото</title></head>");
+myWin.document.write("<body topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 bgcolor='#f3f0e7'>");
+myWin.document.write("<a href='javascript:window.close();' title='Закрыть окно'><img src="+URL+" border=0></a>");
+myWin.document.write("</body></html>");
+myWin.document.close(); 
+myWin.focus(); 
+}
+
+//-->
+</SCRIPT>
+
+
+
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+<table style="margin: 0px 0px 0px 0px" cellspacing="0" cellpadding="0" border="0" width="100%">
+    <tr>
+        <td width="100%">
+            <div class="zagh2">Сведения о сотрудниках</div>
+        </td>
+    </tr>
+</table>
+     <form method="POST">
+        {% csrf_token %}
+        <div class="form-group" size ="40" width="250" height=" 25" border-radius="3">
+        {{ form }}
+        </div>
+         <div class="but" >
+         <input type="submit" value="Вывести информацию" >
+             <div>
+     </form>
+</TD></TR>
+</TABLE>
+
+    <br><br><br>
+
+
+    <TABLE  width="100%" id="rg3196089"  border="0" cellpadding="0" cellspacing="0" summary=""><tr><td></td></tr></TABLE>
+
+
+<table style="margin: 0px 0px 0px 0px" cellspacing="0" cellpadding="0" border="0" width="100%">
+
+    <!-- Форма диалога внесения предложений -->
+    <div id="dialog1" style="display:none; font-size:12px;" width="100%">
+
+        <form name="advice_form" id="advice_form" action="https://portal.tpu.ru/portal/pls/portal/!app_desktop.page_marks_bkd.advice_add" method="post">
+        <input name="page_index2" id="page_index2" type="hidden" value="0">
+        <textarea name="adv_text" id="adv_text" class="area">Текст предложения..</textarea><br><br>
+        <input name="advice_send_btn" id="advice_send" type="submit" value="Отправить" class="btn1"> <!--  class="btn" -->
+        </form>
+
+        <br><br><div id="advice_result">Результат отправки формы</div>
+
+    </div>
+
+    <!-- Голосование -->
+    <div id="vote_dialog" style="display:none; font-size:12px;"><div id="vote_result"></div></div>
+
+
+    <input name="cur_group" type="hidden" value="0" id="cur_group">
+    <input name="cur_sem" type="hidden" value="0" id="cur_sem">
+    <input name="fs_id" id="fs_id" type="hidden" value="0">
+
+    
+</DIV>
+
+</td></tr>
+</table>
+</TD></TR>
+</TABLE>
+<TABLE  width="100%" id="rg2521652"  border="0" cellpadding="0" cellspacing="0" summary=""><tr><td></td></tr></TABLE><TABLE  width="100%" id="rg2615083"  border="0" cellpadding="0" cellspacing="0" summary=""><tr><td></td></tr></TABLE></TD>
+<td valign="top" style="width:20px">
+<TABLE  width="100%" id="rg2520795"  border="0" cellpadding="0" cellspacing="0" summary=""><TR ALIGN="LEFT">
+<td valign="top" style="padding:0px 0px 0px 0px;width:100%;"><span class="inplacedisplayid1siteid1497"><div class="pad20">
+</div></SPAN>
+</TD></TR>
+</TABLE></TD>
+</TR>
+</TABLE>
+<TABLE  width="100%" id="rg2520791"  border="0" cellpadding="0" cellspacing="0" summary=""><tr><td></td></tr></TABLE><!-- show footer template = 10430766938 -->
+ 
+   </div>
+  <div class="garant"></div>
+  </div>
+  
+<div class="footer_links ">
+<div class="content normal">
+<div class="footer_items">
+<div><ul>
+<li><a href="https://tpu.ru" target="_blank">Сайт ТПУ</a></li>
+<li><a href="https://portal.tpu.ru" target="_blank">Корпоративный портал</a></li>
+<li><a href="https://portal.tpu.ru/science" target="_blank">Мероприятия ТПУ</a></li>
+<li><a href="https://staff.tpu.ru/personal" target="_blank">Телефонный справочник</a></li>
+<li><a href="https://maps.tpu.ru" target="_blank">Карта кампуса ТПУ</a></li>
+</ul></div>
+<div>
+<ul>
+<li><a href="https://mail.tpu.ru" target="_blank">Электронная почта</a></li>
+<li><a href="https://raspisanie.tpu.ru" target="_blank">Расписание занятий</a></li>
+<li><a href="https://staff.tpu.ru/html/it" target="_blank">Цифровые сервисы</a></li>
+<li><a href="https://staff.tpu.ru/html/wifi" target="_blank">Настройка WiFi ТПУ</a></li>
+<li><a href="https://help.tpu.ru" target="_blank">Техподдержка</a></li>
+</ul>
+</div>
+<div>
+<ul>
+<li><a href="https://lib.tpu.ru" target="_blank">Научно-техническая библиотека ТПУ</a></li>
+<li><a href="https://vk.com/postpu" target="_blank">Профсоюз студентов</a></li>
+<li><a href="https://portal.tpu.ru/www/sites" target="_blank">Персональные сайты преподавателей</a></li>
+<li><a href="https://edu.tpu.ru" target="_blank">Лекторий ТПУ</a></li>
+<li><a href="https://openedu.tpu.ru" target="_blank">MOOK ТПУ</a></li>
+</ul>
+</div>
+</div>
+
+<div class="socseti">
+<a href="https://www.tiktok.com/@tpu.house" target="_blank"><i class="fab fa-tiktok fa-2x"></i> </a>
+<a href="https://ttttt.me/newstpu" target="_blank"><i class="fab fa-telegram-plane fa-2x"></i> </a>
+<a href="https://www.youtube.com/user/TPUmedia" target="_blank"><i class="fab fa-youtube  fa-2x"></i> </a>
+<a href="https://www.facebook.com/TPUnews" target="_blank"><i class="fab fa-facebook-f fa-2x"></i> </a>
+<a href="https://www.instagram.com/tpu.ru" target="_blank"><i class="fab fa-instagram fa-2x"></i> </a>
+<a href="https://vk.com/tpunews" target="_blank"><i class="fab fa-vk fa-2x"></i> </a>
+<a href="https://www.ok.ru/tpunews" target="_blank"><i class="fab fa-odnoklassniki  fa-2x"></i> </a>
+<a href="https://twitter.com/TPUnews" target="_blank"><i class="fab fa-twitter  fa-2x"></i></a>
+</div>
+
+</div></div>
+
+<div class="footer">
+    <div class="footer-txt"><script language="javascript" type="text/javascript"><!--
+
+var d = new Date(); document.write(d.getFullYear() + " г."); //--></script> &copy; <a href="http://www.tpu.ru" class="tpu" target="_blank" title="Национальный исследовательский Томский политехнический университет">Национальный исследовательский Томский политехнический университет</a>
+
+<div class="footer-txt-small">Разработка и поддержка: <a href="https://portal.tpu.ru/departments/centre/ceu" class="tpu" target="_blank">Центр «Электронный университет» ТПУ</a>
+		</div>
+</div>
+    </div>
+</BODY>
+</HTML>
+<!-- Page Metadata Generated On: 30-МАР-2021:15:46:34  Time Taken: 60 msecs -->
